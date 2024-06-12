@@ -1,33 +1,46 @@
-<div class=" pt-5 ">
-  <div class="row">
-    <div class="col d-flex align-items-center justify-content-around">
-      <div class="row pt-5">
+
+<a routerLink="phone">go to phone</a>
+<div class="container pt-5">
+  <div class="row ">
+    <div class="col d-flex align-items-center justify-content-center">
+      <div class="row">
+
         <div class="col">
-         <div class="card ">
-          <div class="card-body text-center">
-            <i class="bi bi-phone-fill text-center"></i>
-            <strong>Mobile Phones</strong>
+          <a routerLink="../phone" style="text-decoration:none">
+          <div class="card  border-0  h-100 d-flex flex-column w-100" style="background-color: #7a7aa7">
+            <i class="bi bi-phone-fill text-white text-center card-img-top" style="font-size:100px;"></i>
+            <div class="card-body text-center">
+
+              <strong>Mobile Phones</strong>
+            </div>
+          </div></a>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card  border-0  h-100 d-flex flex-column" style="background-color: #7a7aa7">
+            <i class="bi bi-headphones text-white text-center card-img-top" style="font-size:100px;"></i>
+            <div class="card-body text-center">
+
+              <strong>Headphones</strong>
+            </div>
           </div>
-         </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-phone-fill"></i>
-            </div>
-           </div>
 
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-phone-fill"></i>
-            </div>
-           </div>
 
+        <div class="col">
+          <div class="card border-0  h-100 d-flex flex-column" style="background-color: #7a7aa7">
+            <i class="bi bi-earbuds text-white text-center card-img-top" style="font-size:100px;"></i>
+            <div class="card-body text-center">
+
+              <strong>Earbuds</strong>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
-
 </div>
+<router-outlet></router-outlet>
