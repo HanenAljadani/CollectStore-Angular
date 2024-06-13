@@ -18,7 +18,7 @@
 
              <h6 class=" font-weight-light pt-1">Price {{item.price}} SAR</h6>
               <div class="d-flex justify-content-end">
-             <a class=" btn btn-outline-secondary" routerLink="/phonedetails"> Details  <i class="bi bi-chevron-right"></i></a>
+             <a class=" btn btn-outline-secondary" [routerLink]="['/phonedetails',item.id]"> Details  <i class="bi bi-chevron-right"></i></a>
 
 
               </div>
