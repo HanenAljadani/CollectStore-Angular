@@ -10,6 +10,8 @@ import { PhoneComponent } from './phone/phone.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneDetailsComponent } from './phone-details/phone-details.component';
 import { ProductsComponent } from './products/products.component';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,10 @@ import { ProductsComponent } from './products/products.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    })
   ],
   providers: [
     provideClientHydration()
